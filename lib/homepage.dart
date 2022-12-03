@@ -9,15 +9,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: whiteColor,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: Wrap(
+          runSpacing: 20,
+          spacing: 20,
           children: [
             GestureDetector(
               onTap: () => Navigator.pushNamed(context, '/test-api'),
               child: Container(
                 height: 150,
                 width: 150,
-                decoration: const BoxDecoration(color: redColor),
+                decoration: const BoxDecoration(
+                    color: redColor,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -36,7 +39,9 @@ class HomePage extends StatelessWidget {
               child: Container(
                 height: 150,
                 width: 150,
-                decoration: const BoxDecoration(color: redColor),
+                decoration: const BoxDecoration(
+                    color: redColor,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -51,16 +56,39 @@ class HomePage extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () => Navigator.pushNamed(context, '/upload'),
+              onTap: () => Navigator.pushNamed(context, '/map'),
               child: Container(
                 height: 150,
                 width: 150,
-                decoration: const BoxDecoration(color: redColor),
+                decoration: const BoxDecoration(
+                    color: redColor,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Maps',
+                      textAlign: TextAlign.center,
+                      style: whiteTextStyle.copyWith(
+                          fontSize: 24, fontWeight: semiBold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/coffee'),
+              child: Container(
+                height: 150,
+                width: 150,
+                decoration: const BoxDecoration(
+                    color: redColor,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Coffee',
                       textAlign: TextAlign.center,
                       style: whiteTextStyle.copyWith(
                           fontSize: 24, fontWeight: semiBold),

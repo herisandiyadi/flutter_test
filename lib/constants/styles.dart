@@ -15,6 +15,8 @@ const Color darkColor = Color(0xFF1A1D26);
 const Color whiteColor = Color(0xFFFFFFFF);
 const Color pinkColor = Color(0xFFFDEFEF);
 const Color softTosca = Color(0xFF71A9A9);
+const Color brownColor = Color(0xFF6F4E37);
+const Color softBrownColor = Color(0xFFD0BB94);
 const Color transparentColor = Colors.transparent;
 
 TextStyle orangeTextStyle = GoogleFonts.poppins(color: orangeColor);
@@ -28,6 +30,7 @@ TextStyle purppleTextSytle = GoogleFonts.poppins(color: purpleColor);
 TextStyle redTextSytle = GoogleFonts.poppins(color: redColor);
 TextStyle toscaTextSytle = GoogleFonts.poppins(color: toscaColor);
 TextStyle navyTextSytle = GoogleFonts.poppins(color: navyColor);
+TextStyle brownTextSytle = GoogleFonts.poppins(color: brownColor);
 
 FontWeight bold = FontWeight.bold;
 FontWeight regular = FontWeight.w400;

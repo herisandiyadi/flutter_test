@@ -11,4 +11,23 @@ class AlertWidget {
       text: messages,
     );
   }
+
+  void success(BuildContext context, String messages) {
+    QuickAlert.show(
+      context: context,
+      type: QuickAlertType.success,
+      title: 'Success',
+      text: messages,
+    );
+  }
+
+  void customAlert(BuildContext context, String messages, String images) {
+    QuickAlert.show(
+      context: context,
+      type: QuickAlertType.success,
+      title: 'Success',
+      text: messages,
+      customAsset: images,
+    );
+  }
 }

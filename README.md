@@ -1,6 +1,6 @@
 # test_flutter
 
-A new Flutter project.
+Application for Test Interview
 
 ## Getting Started
 

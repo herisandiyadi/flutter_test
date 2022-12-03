@@ -25,8 +25,6 @@ class _UploadPageState extends State<UploadPage> {
     setState(() {
       if (pickedFile != null) {
         _image = File(pickedFile.path);
-      } else {
-        print('No image selected.');
       }
     });
   }
@@ -37,8 +35,6 @@ class _UploadPageState extends State<UploadPage> {
     setState(() {
       if (pickedFile != null) {
         _image = File(pickedFile.path);
-      } else {
-        print('No image selected.');
       }
     });
   }
